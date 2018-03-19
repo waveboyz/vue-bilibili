@@ -1,13 +1,16 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <m-header></m-header>
   </div>
 </template>
 
-<script>
+<script type="text/ecmascript-6">
+import MHeader from 'components/m-header/m-header'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    MHeader
+  }
 }
 </script>
 
