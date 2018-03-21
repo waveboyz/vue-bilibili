@@ -6,10 +6,21 @@
 
 <script type="text/ecmascript-6">
 import MHeader from 'components/m-header/m-header'
+import {getBannerlist} from 'api/mainPage'
 export default {
   name: 'App',
   components: {
     MHeader
+  },
+  created () {
+    this._getBannerList()
+  },
+  methods: {
+    _getBannerList () {
+      getBannerlist().then((res) => {
+        console.log(res.data.list)
+      })
+    }
   }
 }
 </script>
