@@ -1,6 +1,8 @@
 <template>
 <div class="m-header">
-  <a class="index-header-logo">logo</a>
+  <router-link  class="imgIcon" to="/main">
+    <img class="index-header-logo">logo</img>
+  </router-link>
   <a class="index-header-search">search-bar</a>
   <a class="index-header-avartar">avartar</a>
   <a class="index-header-download">download-btn</a>
@@ -8,8 +10,16 @@
 </template>
 
 <script type="text/ecmascript-6">
-export default {}
+export default {
+
+}
 </script>
 
-<style lang="css">
+<style lang="scss">
+.imgIcon{
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: auto;
+}
 </style>

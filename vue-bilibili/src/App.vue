@@ -1,26 +1,21 @@
 <template>
   <div id="app">
-    <m-header></m-header>
+    <m-header>
+    </m-header>
+    <tab>
+    </tab>
+    <router-view></router-view>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
 import MHeader from 'components/m-header/m-header'
-import {getBannerlist} from 'api/mainPage'
+import Tab from 'components/tab/tab'
 export default {
   name: 'App',
   components: {
-    MHeader
-  },
-  created () {
-    this._getBannerList()
-  },
-  methods: {
-    _getBannerList () {
-      getBannerlist().then((res) => {
-        console.log(res.data.list)
-      })
-    }
+    MHeader,
+    Tab
   }
 }
 </script>
