@@ -1,7 +1,7 @@
 <template>
 <div class="m-header">
   <router-link  class="imgIcon" to="/main">
-    <img class="index-header-logo">logo</img>
+    <a class="index-header-logo">logo</a>
   </router-link>
   <a class="index-header-search">search-bar</a>
   <a class="index-header-avartar">avartar</a>
